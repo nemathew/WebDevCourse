@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Race Registration Form</title>
+</head>
+
+<body>
+    <h1>Race Registration!</h1>
+
+    <!--Tested with this input: file:///Users/nicmathews/dev/webdev/exercises/forms/race_registration.html?first_name=Nicolle&last_name=Mathews&race_type=full_marathon&age_group=18-35&email=m%40gm&pass=pass1234-->
+    <form action="">
+        <div class="name_details">
+            <p>
+                <label for="first_name">First Name</label>
+                <input type="text" name="first_name" id="first_name" required>
+            </p>
+            <p>
+                <label for="last_name">Last Name</label>
+                <input type="text" name="last_name" id="last_name" required>
+            </p>
+        </div>
+
+        <div class="race_selection">
+            <p>
+                <label for="race_type">Select a Race:</label>
+                <p>
+                    <input type="radio" name="race_type" id="fivek" value="fivek">
+                    <label for="fivek">Fun Run 5k</label>
+                </p>
+                <p>
+                    <input type="radio" name="race_type" id="half_marathon" value="half_marathon">
+                    <label for="half_marathon">Half Marathon</label>
+                </p>
+                <p>
+                    <input type="radio" name="race_type" id="full_marathon" value="full_marathon">
+                    <label for="full_marathon">Full Marathon</label>
+                </p>
+                <p>
+                    <label for="age_group">Select an Age Group</label>
+                    <select name="age_group" id="age_group">
+                        <option value="under_18" >Under 18</option>
+                        <option value="ya" selected>18 - 35</option>
+                        <option value="adults">Over 35</option>
+                    </select>
+                </p>
+            </p>
+        </div>
+
+        <div class="account_info">
+            <p>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" minlength="8" maxlength="20" required>
+            </p>
+        </div>
+
+        <button>Register</button>
+
+    </form>
+
+
+</body>
+
+</html>

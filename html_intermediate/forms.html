@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <form action="">
+        <p>
+            <label for="username">Enter your username:</label>
+            <input type="text" placeholder="username" name="username" id="username">
+        </p>
+        <p>
+            <label for="password">Enter your password:</label>
+            <input type="password" placeholder="password" name="password" id="password">
+        </p>
+        <p>
+            <label for="fav_color">What is your favorite color?</label>
+            <input type="color" name="fav_color" id="fav_color">
+        </p>
+        <p>
+            <label for="fav_number">What is your favorite number?</label>
+            <input type="number" placeholder="enter a number" name="fav_num" id="fav_number">
+        </p>
+        <button>Submit</button>
+    </form>
+
+    <hr>
+    <h2>Hijacking Different Searches</h2>
+    <h3>Search Reddit</h3>
+    <!--https://www.reddit.com/search/?q=axolotl-->
+    <form action="https://www.reddit.com/search">
+        <input type="text" name="q" id="query">
+        <button>Search Reddit</button>
+    </form>
+    <h3>Search Google</h3>
+    <!--https://www.google.com/search?q=axolots-->
+    <form action="https://www.google.com/search">
+        <input type="text" name="q" id="query">
+        <button>Search Google</button>
+    </form>
+    <h3>Search YouTube</h3>
+    <!--https://www.youtube.com/results?search_query=axolotls-->
+    <form action="https://www.youtube.com/results">
+        <input type="text" name="search_query" id="search_query">
+        <button>Search YouTube</button>
+    </form>
+    <hr>
+
+    <h2>Interest Form</h2>
+    <form action="">
+        <input type="checkbox" name="likeAxolotls" id="likeAxolotls">
+        <label for="likeAxolotls">Do you love axolotls as much as I do?
+        </label>
+
+        <h3>Favorite Axolotl color</h3>
+        <p>
+            <p>
+                <input type="radio" name="color_ax" id="pink" value="Pink">
+                <label for="pink">Pink Ones ^_^ </label>
+            </p>
+            <p>
+                <input type="radio" name="color_ax" id="black" value="black">
+                <label for="black">Black Ones O.o</label>
+            </p>
+            <p>
+                <input type="radio" name="color_ax" id="white" value="white">
+                <label for="white">White Ones -_-</label>
+            </p>
+
+            <p>
+                <label for="own">Would you want to have a pet axolotl?</label>
+                <select name=own" id="own">
+                    <option value="HeckYes">Heck Yes</option>
+                    <option value="No">No... but their cute</option>
+                    <option value="Maybe">Maybe, I'm still deciding</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="axolotl_excitement">How excited are you about axolotls now?</label>
+                <input type="range" name="axolotl_excitement" id="axolotl_excitement" min="-327" max="294">
+            </p>
+            <p>
+                <label for="thoughts">Tell us your thoughts on Axolotls</label>
+                <br>
+                <textarea name="thoughts" id="thoughts" cols="40" rows="10" placeholder="Type something here..."></textarea>
+            </p>
+
+            <button type="submit">Submit</button>
+        </p>
+
+    </form>
+
+</body>
+
+</html>

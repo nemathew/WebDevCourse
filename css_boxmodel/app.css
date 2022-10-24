@@ -1,0 +1,33 @@
+div {
+    width: 200px;
+    height: 200px;
+}
+
+h1 {
+    padding-left: 30px;
+}
+
+#one {
+ background-color: #264653;
+ border-width: 5px;
+ border-color: aliceblue;
+ border-style: solid;
+}
+
+#two {
+ background-color: #e76f51;
+ border-width: 5px;
+ border-color: aliceblue;
+ border-style: solid;
+}
+
+#three{
+ background-color: #2a9d8f;
+ border-width: 5px;
+ border-color: aliceblue;
+ border-style: solid;
+}
+
+button {
+    padding: 10px 5px;
+}
